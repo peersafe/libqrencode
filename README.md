@@ -105,6 +105,19 @@ community contributors. If the version is out of date, please
 [create an issue or pull request](https://github.com/Microsoft/vcpkg) on the
 vcpkg repository.
 
+We recommend you to compile the qrencode using build.sh.
+```
+
+> build.sh -h
+usage:
+ build.sh [option]
+
+options:
+  clean           clean all buiding files
+  --arm           creating executables on arm
+  --rebuild       rebuiding
+
+```
 
 USAGE
 =====
@@ -112,6 +125,10 @@ Basic usages of this library are written in the header file (qrencode.h).
 You can generate a manual of the library by using Doxygen, or see
 
 https://fukuchi.org/works/qrencode/manual/index.html
+
+```
+> ./qrencode -o bin -w 128 -H 128 -s 2 -l L -v 0 -P 2 bdb898a28642db7cfa960cb7ecbd54635575a64fc8f73affd1e98a2d9e8a1ebdfeefbc0a06f9b60feb75c8ff695f074309923bfaa60f0996658f440b4b168444
+```
 
 
 WARNINGS
